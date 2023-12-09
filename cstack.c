@@ -8,8 +8,6 @@ typedef int hstack_t;
 #define I 10
 struct list 
 {
-	//unsigned int size;
-	//char data[0];
 	void* data;
 	struct list* last;
 };
@@ -81,8 +79,6 @@ unsigned int stack_size(const hstack_t hstack)
 {
     return primary[hstack].count;
 }
-
-
 
 void stack_push(const hstack_t hstack, const void* data_in, const unsigned int size)
 {
